@@ -27,7 +27,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_02_19_020952) do
     t.integer "total_slept_seconds"
     t.datetime "created_at", default: -> { "CURRENT_TIMESTAMP" }
     t.datetime "updated_at", default: -> { "CURRENT_TIMESTAMP" }
-    t.index ["total_slept_seconds"], name: "index_sleep_schedules_on_total_slept_seconds"
+    t.index ["created_at", "total_slept_seconds"], name: "index_sleep_schedules_on_created_at_and_total_slept_seconds"
   end
 
   create_table "users", force: :cascade do |t|
