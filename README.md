@@ -31,7 +31,7 @@ Tech used:
 - POST follow_user -> add a user to follow
 - DELETE follow_user -> delete the follow
 
-The last two takes the follow body:
+The last two takes the following body request(JSON):
 ```json
 {
     "follower_id": 1,
